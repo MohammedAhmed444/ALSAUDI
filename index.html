@@ -1,1 +1,189 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alsauditech</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#000;--bg2:#0a0f1c;--line:#1a2540;--blue:#1f6bff;--blue2:#4d8dff;--fg:#fff;--mut:#9aa6c0;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:"IBM Plex Sans Arabic",system-ui,Arial,sans-serif;line-height:1.7}
+a{color:inherit;text-decoration:none}
+.w{max-width:1040px;margin:auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:rgba(0,0,0,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:rgba(0,0,0,.85);z-index:4}
+nav{display:flex;align-items:center;gap:18px;height:60px}
+.logo{font-weight:700;letter-spacing:.5px;font-size:18px}
+.logo b{color:var(--blue2)}
+.links{display:flex;gap:16px;margin-inline-start:auto;font-size:14px;color:var(--mut);overflow-x:auto;white-space:nowrap}
+.links a:hover{color:#fff}
+button,.btn{font:inherit;cursor:pointer;border-radius:8px;padding:10px 18px;border:1px solid var(--blue);background:var(--blue);color:#fff;font-weight:500;display:inline-block}
+.btn.o,button.o{background:transparent;color:#fff;border-color:#2b3a5e}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--blue2);outline-offset:2px}
+.sm{padding:6px 12px;font-size:13px}
+.hero{padding:84px 0 72px;background:radial-gradient(900px 340px at 80% 0,rgba(31,107,255,.28),transparent 70%)}
+.hero h1{font-size:clamp(40px,9vw,84px);line-height:1.1;margin:0 0 18px;font-weight:700}
+.hero h1 span{color:var(--blue2)}
+.hero p{color:var(--mut);max-width:560px;font-size:18px;margin:0 0 28px}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+section{padding:60px 0;border-top:1px solid var(--line)}
+h2{font-size:30px;margin:0 0 10px}
+.sub{color:var(--mut);margin:0 0 28px;max-width:620px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.box{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:24px}
+.box h3{margin:0 0 12px;font-size:20px;color:var(--blue2)}
+.box ul{margin:0;padding-inline-start:20px;color:#d7def0}
+.box li{margin:6px 0}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips span{border:1px solid var(--line);background:var(--bg2);border-radius:999px;padding:8px 16px;font-size:14px}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0 28px}
+.why p{margin:0;padding:14px 0;border-bottom:1px solid var(--line)}
+form{display:grid;gap:12px;max-width:560px}
+input,select,textarea{width:100%;font:inherit;background:#05080f;color:#fff;border:1px solid #2b3a5e;border-radius:8px;padding:11px 12px}
+label{font-size:14px;color:var(--mut);display:grid;gap:4px}
+.c{font-size:20px;direction:ltr;unicode-bidi:plaintext}
+footer{border-top:1px solid var(--line);padding:36px 0;color:var(--mut);font-size:14px}
+footer .links{margin:14px 0}
+dialog{background:var(--bg2);color:#fff;border:1px solid #2b3a5e;border-radius:14px;padding:24px;width:min(420px,92vw)}
+dialog::backdrop{background:rgba(0,0,0,.7)}
+#msg{color:var(--blue2);min-height:24px;margin:0}
+</style>
+</head>
+<body>
+<header><div class="w"><nav>
+<a class="logo" href="#home">ALSAUDI<b>TECH</b></a>
+<div class="links">
+<a href="#services" data-t="n_services"></a><a href="#portfolio" data-t="n_portfolio"></a><a href="#why" data-t="n_why"></a><a href="#request" data-t="n_request"></a><a href="#contact" data-t="n_contact"></a>
+</div>
+<button class="o sm" id="lang">EN</button>
+<button class="sm" data-open="login" data-t="login"></button>
+</nav></div></header>
 
+<main id="home">
+<div class="hero"><div class="w">
+<h1><span data-t="h1a"></span><br><span style="color:#fff" data-t="h1b"></span></h1>
+<p data-t="hero_p"></p>
+<div class="row"><a class="btn" href="#services" data-t="explore"></a><a class="btn o" href="#request" data-t="req_btn"></a><button class="o" data-open="signup" data-t="signup"></button></div>
+</div></div>
+
+<section id="services"><div class="w">
+<h2 data-t="n_services"></h2>
+<div class="grid">
+<div class="box"><h3 data-t="mob"></h3><p class="sub" data-t="mob_p"></p><ul data-list="mob_l"></ul></div>
+<div class="box"><h3 data-t="des"></h3><p class="sub" data-t="des_p"></p><ul data-list="des_l"></ul></div>
+</div></div></section>
+
+<section id="portfolio"><div class="w">
+<h2 data-t="n_portfolio"></h2>
+<p class="sub" data-t="port_p"></p>
+<div class="chips" data-chips="port_l"></div>
+<p class="sub" style="margin-top:24px" data-t="port_q"></p>
+</div></section>
+
+<section id="why"><div class="w">
+<h2 data-t="why_h"></h2>
+<div class="why" data-why="why_l"></div>
+</div></section>
+
+<section id="request"><div class="w">
+<h2 data-t="req_h"></h2>
+<p class="sub" data-t="req_p"></p>
+<form id="rf">
+<label><span data-t="f_name"></span><input name="n" required></label>
+<label><span data-t="f_phone"></span><input name="p" type="tel" required></label>
+<label><span data-t="f_email"></span><input name="e" type="email"></label>
+<label><span data-t="f_type"></span><select name="t" id="types"></select></label>
+<label><span data-t="f_det"></span><textarea name="d" rows="4" required></textarea></label>
+<button type="submit" data-t="send"></button>
+<p id="msg" role="status"></p>
+</form>
+</div></section>
+
+<section id="contact"><div class="w">
+<h2 data-t="n_contact"></h2>
+<p class="sub" data-t="con_p"></p>
+<p><span data-t="wa"></span><br><a class="c" href="https://wa.me/249968251642" target="_blank" rel="noopener">+249968251642</a></p>
+<p><span data-t="em"></span><br><a class="c" href="mailto:muhammedahmedbashier@gmail.com">muhammedahmedbashier@gmail.com</a></p>
+</div></section>
+</main>
+
+<footer><div class="w">
+<div class="logo">ALSAUDI<b>TECH</b></div>
+<div data-t="foot_p"></div>
+<div class="links"><a href="#home" data-t="n_home"></a><a href="#services" data-t="n_services"></a><a href="#portfolio" data-t="n_portfolio"></a><a href="#contact" data-t="n_contact"></a></div>
+<div>© 2026 ALSAUDITECH. All Rights Reserved.</div>
+</div></footer>
+
+<dialog id="login"><form method="dialog" onsubmit="return soon(event)">
+<h2 data-t="login_h"></h2><p class="sub" data-t="login_p"></p>
+<label><span data-t="l_user"></span><input required></label>
+<label><span data-t="l_pass"></span><input type="password" required></label>
+<label style="display:flex;gap:8px;align-items:center"><input type="checkbox" style="width:auto"><span data-t="remember"></span></label>
+<button data-t="login"></button>
+<p class="sub" data-note></p>
+<button type="button" class="o" data-open="signup" data-t="signup2"></button>
+</form></dialog>
+
+<dialog id="signup"><form method="dialog" onsubmit="return soon(event)">
+<h2 data-t="signup"></h2><p class="sub" data-t="signup_p"></p>
+<label><span data-t="f_full"></span><input required></label>
+<label><span data-t="f_email"></span><input type="email" required></label>
+<label><span data-t="f_phone"></span><input type="tel" required></label>
+<label><span data-t="l_pass"></span><input type="password" required></label>
+<label><span data-t="l_pass2"></span><input type="password" required></label>
+<button data-t="signup"></button>
+<p class="sub" data-note></p>
+</form></dialog>
+
+<script>
+const D={
+ar:{n_home:"الرئيسية",n_services:"خدماتنا",n_portfolio:"معرض الأعمال",n_why:"لماذا نحن",n_request:"طلب خدمة",n_contact:"تواصل معنا",login:"تسجيل الدخول",signup:"إنشاء حساب",signup2:"إنشاء حساب جديد",
+h1a:"نحوّل أفكارك",h1b:"إلى واقع رقمي.",hero_p:"وجهتك المتكاملة للحلول التقنية والإبداعية: خدمات تقنية وتصميم وهوية بصرية بجودة احترافية، لتطوير أعمالك وتحقيق رؤيتك الرقمية.",explore:"استكشف خدماتنا",req_btn:"اطلب خدمة",
+mob:"خدمات الموبايل",mob_p:"حلول تقنية متخصصة لمعالجة مشكلات الهواتف المحمولة والأنظمة.",
+mob_l:["معالجة مشاكل رمز Telegram OTP","معالجة مشكلات وحظر WhatsApp","تخطي حساب Google FRP لمختلف موديلات الهواتف المدعومة","خدمات فك وإدارة حظر MDM","معالجة المشكلات البرمجية للهواتف","حلول وصيانة أنظمة الهواتف المحمولة"],
+des:"التصميم والبراند",des_p:"نساعدك على بناء هوية بصرية احترافية تعكس قوة علامتك التجارية.",
+des_l:["تصميم الشعارات","تصميم الهوية البصرية الكاملة","تصميم المحلات التجارية","تصميم هويات الشركات والمؤسسات","تصميم الإعلانات والمنشورات التسويقية","تصميم البوسترات والبنرات","جميع أنواع التصاميم الإبداعية","تصميم وتطوير المواقع الإلكترونية"],
+port_p:"اكتشف مجموعة من أعمالنا ومشاريعنا السابقة في مجالات التصميم والهوية البصرية والحلول الرقمية.",port_l:["معرض الشعارات","معرض الهويات البصرية","تصاميم الإعلانات","تصاميم المحلات والشركات","مشاريع المواقع الإلكترونية"],port_q:"الإبداع يبدأ بفكرة، والتميز يظهر في التفاصيل.",
+why_h:"لماذا تختار Alsauditech؟",why_l:["جودة واحترافية في تنفيذ الخدمات","حلول تقنية متنوعة","تصاميم عصرية وإبداعية","الاهتمام بأدق التفاصيل","سرعة الاستجابة للعملاء","دعم ومتابعة مستمرة"],
+req_h:"طلب خدمة",req_p:"حدد نوع الخدمة وأضف تفاصيل طلبك، وسيتواصل معك فريق الدعم.",f_name:"الاسم",f_full:"الاسم الكامل",f_phone:"رقم الهاتف",f_email:"البريد الإلكتروني",f_type:"نوع الخدمة",f_det:"تفاصيل الطلب",send:"إرسال الطلب",sent:"سيفتح واتساب برسالة جاهزة، اضغط إرسال هناك لإتمام الطلب.",
+con_p:"نحن هنا لمساعدتك والإجابة عن استفساراتك.",wa:"رقم التواصل والواتساب",em:"البريد الإلكتروني",foot_p:"الحلول التقنية والإبداعية في مكان واحد.",
+login_h:"مرحباً بعودتك",login_p:"سجّل الدخول لمتابعة طلبات الخدمات.",l_user:"البريد الإلكتروني أو اسم المستخدم",l_pass:"كلمة المرور",l_pass2:"تأكيد كلمة المرور",remember:"تذكرني",signup_p:"أنشئ حسابك لإدارة طلباتك.",note:"الحسابات ستُفعَّل قريباً. للطلب الآن استخدم نموذج طلب خدمة."},
+en:{n_home:"Home",n_services:"Services",n_portfolio:"Portfolio",n_why:"Why us",n_request:"Request",n_contact:"Contact",login:"Log in",signup:"Create account",signup2:"Create a new account",
+h1a:"We turn your ideas",h1b:"into digital reality.",hero_p:"Your complete destination for technical and creative solutions: tech services, design and visual identity at professional quality, to grow your business and deliver your digital vision.",explore:"Explore services",req_btn:"Request a service",
+mob:"Mobile services",mob_p:"Specialized technical solutions for mobile phone and system issues.",
+mob_l:["Telegram OTP code issues","WhatsApp issues and bans","Google FRP bypass for supported phone models","MDM lock removal and management","Phone software troubleshooting","Mobile system solutions and maintenance"],
+des:"Design & branding",des_p:"We help you build a professional visual identity that reflects the strength of your brand.",
+des_l:["Logo design","Full visual identity","Commercial store design","Corporate branding","Ads and marketing posts","Posters and banners","All kinds of creative design","Website design and development"],
+port_p:"Explore our previous work in design, visual identity and digital solutions.",port_l:["Logos","Visual identities","Ad designs","Store and company designs","Website projects"],port_q:"Creativity starts with an idea; excellence shows in the details.",
+why_h:"Why choose Alsauditech?",why_l:["Professional, high-quality delivery","Diverse technical solutions","Modern, creative designs","Attention to the finest details","Fast response to clients","Continuous support and follow-up"],
+req_h:"Request a service",req_p:"Choose the service type and add your details. Our support team will get in touch.",f_name:"Name",f_full:"Full name",f_phone:"Phone number",f_email:"Email",f_type:"Service type",f_det:"Request details",send:"Send request",sent:"WhatsApp will open with a ready message. Press send there to complete your request.",
+con_p:"We're here to help and answer your questions.",wa:"Phone & WhatsApp",em:"Email",foot_p:"Technical and creative solutions in one place.",
+login_h:"Welcome back",login_p:"Log in to follow your service requests.",l_user:"Email or username",l_pass:"Password",l_pass2:"Confirm password",remember:"Remember me",signup_p:"Create your account to manage your requests.",note:"Accounts are coming soon. To order now, use the Request a Service form."}
+};
+let L=localStorageGet()||"ar";
+function localStorageGet(){try{return localStorage.getItem("l")}catch(e){return null}}
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+function render(){
+const d=D[L];
+document.documentElement.lang=L;document.documentElement.dir=L=="ar"?"rtl":"ltr";
+$("#lang").textContent=L=="ar"?"EN":"عربي";
+$$("[data-t]").forEach(e=>e.textContent=d[e.dataset.t]);
+$$("[data-list]").forEach(e=>e.innerHTML=d[e.dataset.list].map(x=>"<li>"+x+"</li>").join(""));
+$$("[data-chips]").forEach(e=>e.innerHTML=d[e.dataset.chips].map(x=>"<span>"+x+"</span>").join(""));
+$$("[data-why]").forEach(e=>e.innerHTML=d[e.dataset.why].map(x=>"<p>"+x+"</p>").join(""));
+$$("[data-note]").forEach(e=>e.textContent=d.note);
+$("#types").innerHTML=[...d.mob_l,...d.des_l].map(x=>"<option>"+x+"</option>").join("");
+}
+$("#lang").onclick=()=>{L=L=="ar"?"en":"ar";try{localStorage.setItem("l",L)}catch(e){}render()};
+$$("[data-open]").forEach(b=>b.onclick=()=>{$$("dialog").forEach(x=>x.close());$("#"+b.dataset.open).showModal()});
+function soon(e){e.preventDefault();return false}
+$("#rf").onsubmit=e=>{e.preventDefault();const f=new FormData(e.target);
+const t=L=="ar"?`طلب خدمة جديد\nالاسم: ${f.get("n")}\nالهاتف: ${f.get("p")}\nالبريد: ${f.get("e")||"-"}\nالخدمة: ${f.get("t")}\nالتفاصيل: ${f.get("d")}`:`New service request\nName: ${f.get("n")}\nPhone: ${f.get("p")}\nEmail: ${f.get("e")||"-"}\nService: ${f.get("t")}\nDetails: ${f.get("d")}`;
+$("#msg").textContent=D[L].sent;
+window.open("https://wa.me/249968251642?text="+encodeURIComponent(t),"_blank");};
+render();
+</script>
+</body>
+</html>
